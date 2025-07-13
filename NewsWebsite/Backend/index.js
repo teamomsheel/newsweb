@@ -9,13 +9,19 @@ const newsRoutes=require("./Routes/newsRoutes.js")
 const magazineRoutes=require('./Routes/magazineRoute.js')
 require("dotenv").config();
 const app = express();
+app.use(express.json());
 
 
 app.use(cors({
-  origin: [process.env.CLIENT_URL,"http://localhost:3000"],
+  origin: ["https://newsweb-1-45eo.onrender.com","http://localhost:3000"],
   credentials: true,
 }));
-app.use(express.json());
+
+
+// app.use(cors({
+//   origin: [process.env.CLIENT_URL,"http://localhost:3000"],
+//   credentials: true,
+// }));
 app.use(cookieParser());
 app.use(bodyParser.json());
 
