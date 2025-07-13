@@ -29,7 +29,7 @@ const AddWriters = () => {
   try {
     setLoader(true)
     const { data } = await axios.post(
-      "http://localhost:5000/api/news/writer/add",
+      "https://newsweb-1-45eo.onrender.com/api/news/writer/add",
       state,
       {
         headers: {
