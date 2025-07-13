@@ -33,7 +33,7 @@
 
 //     try {
   
-//       const res = await axios.post(`http://localhost:5000/api/magazine/add`, form, {
+//       const res = await axios.post(`https://newsweb-1-45eo.onrender.com/api/magazine/add`, form, {
 //         headers: {
   
 //           Authorization: `Bearer ${store.token}`,
