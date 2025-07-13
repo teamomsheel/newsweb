@@ -13,7 +13,7 @@ const Writers = () => {
 
   const get_writers=async()=>{
     try {
-      const {data}=await axios.get("http://localhost:5000/api/news/writers",{
+      const {data}=await axios.get("https://newsweb-1-45eo.onrender.com/api/news/writers",{
 
         headers:{
           Authorization:`Bearer ${store.token}`
