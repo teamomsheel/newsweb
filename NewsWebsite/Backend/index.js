@@ -18,12 +18,9 @@ app.use(express.json());
 // }));
 
 app.use(cors({
-  origin: [
-    "https://newsweb-snowy.vercel.app", 
-    process.env.CLIENT_URL,
-    "http://localhost:3000"             
-  ],
-  credentials: true,
+  origin: ['https://newsweb-qapb.vercel.app', 'https://newsweb.vercel.app'], // add both preview and production URLs
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
 }));
 
 
