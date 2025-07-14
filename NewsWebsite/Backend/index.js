@@ -20,6 +20,7 @@ app.use(express.json());
 app.use(cors({
   origin: [
     "https://newsweb-snowy.vercel.app", 
+    process.env.CLIENT_URL,
     "http://localhost:3000"             
   ],
   credentials: true,
