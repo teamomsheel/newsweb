@@ -31,7 +31,7 @@ const LatestNews = () => {
 
   const latest_news_get=async()=>{
     try {
-      const res=await fetch(`http://localhost:5000/api/latest/news`)
+      const res=await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/latest/news`)
       const data=await res.json()
       setNews(data.news)
       console.log(data)
