@@ -39,7 +39,7 @@ const AdminVideoUploader = () => {
       setUploading(true);
       setMessage("");
 
-      const res = await axios.post("https://newsweb-1-45eo.onrender.com/api/live-video/upload", formData, {
+      const res = await axios.post("https://newsweb-k4pv.onrender.com/api/live-video/upload", formData, {
         headers: {
           Authorization: `Bearer ${store.token}`,
         },
