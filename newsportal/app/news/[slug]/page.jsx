@@ -13,7 +13,7 @@ import RecentNews from "@/components/News/RecentNews";
 const Details = async ({ params }) => {
   const { slug } = params;
 
-  const res = await fetch(`http://localhost:5000/api/news/details/${slug}`, {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/news/details/${slug}`, {
     next: {
       revalidate: 1,
     },
