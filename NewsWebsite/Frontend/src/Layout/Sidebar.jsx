@@ -23,7 +23,7 @@ const Sidebar = () => {
 
   const handleLogout = async () => {
     try {
-      await axios.post("https://newsweb-1-45eo.onrender.com/api/logout", {}, { withCredentials: true });
+      await axios.post("https://newsweb-k4pv.onrender.com/api/logout", {}, { withCredentials: true });
       toast.success("Logged out successfully");
       setIsLoggedIn(false);
       localStorage.removeItem("newToken");
