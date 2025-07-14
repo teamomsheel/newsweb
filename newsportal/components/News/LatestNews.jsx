@@ -152,10 +152,10 @@ const LatestNews = () => {
         Latest News
       </div>
       <div className="flex gap-x-3">
-        <button onClick={previous} className="w-[30px] h-[30px] bg-white border border-slate-200 flex items-center justify-center">
+        <button onClick={previous} className="w-[30px] h-[30px] bg-white border border-black flex items-center justify-center">
           <FiChevronLeft />
         </button>
-        <button onClick={next} className="w-[30px] h-[30px] bg-white border border-slate-200 flex items-center justify-center">
+        <button onClick={next} className="w-[30px] h-[30px] bg-white border border-black flex items-center justify-center">
           <FiChevronRight />
         </button>
       </div>
