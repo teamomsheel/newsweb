@@ -145,7 +145,7 @@ const MagazineUpload = () => {
 
     try {
       setLoading(true);
-      await axios.post("https://newsweb-1-45eo.onrender.com/api/magazine/add", formData, {
+      await axios.post("https://newsweb-k4pv.onrender.com/api/magazine/add", formData, {
         headers: {
           Authorization: `Bearer ${store.token}`,
         },
