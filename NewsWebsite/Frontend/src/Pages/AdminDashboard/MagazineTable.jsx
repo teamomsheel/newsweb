@@ -8,7 +8,7 @@ const MagazineTable = () => {
 
   const fetchMagazines = async () => {
     try {
-      const res = await axios.get("https://newsweb-1-45eo.onrender.com/api/magazine/all", { withCredentials: true });
+      const res = await axios.get("https://newsweb-k4pv.onrender.com/api/magazine/all", { withCredentials: true });
       setMagazines(res.data.magazines || []);
     } catch (err) {
       console.error("Error fetching magazines", err);
@@ -20,7 +20,7 @@ const MagazineTable = () => {
   const deleteMagazine = async (id) => {
     if (!confirm("Are you sure to delete this magazine?")) return;
     try {
-      await axios.delete(`https://newsweb-1-45eo.onrender.com/api/magazine/delete/${id}`, { withCredentials: true });
+      await axios.delete(`https://newsweb-k4pv.onrender.com/api/magazine/delete/${id}`, { withCredentials: true });
       setMagazines((prev) => prev.filter((m) => m._id !== id));
     } catch (err) {
       console.error("Delete failed", err);
