@@ -58,7 +58,7 @@ const Details = async ({ params }) => {
                       <span>{news?.date}/</span>
                       <span>{news?.writerName}</span>
                     </div>
-                    <div>{parse(news?.description)}</div>
+                    <div className="text-black">{parse(news?.description)}</div>
                   </div>
                 </div>
               </div>
