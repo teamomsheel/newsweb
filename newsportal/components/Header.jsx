@@ -17,7 +17,7 @@ const Header = () => {
   // }
   return (
     <div>
-      <div className="flex flex-col justify-center items-center md:items-center">
+      <div className="flex flex-col justify-center items-center md:items-center bg-white">
         <Image className="w-[200px] h-[100px]" src={newsimg} alt="newsImg" />
       </div>
       <div className="px-5 lg:px-8 flex justify-between items-center bg-[#333333] text-[#cccccc]">
