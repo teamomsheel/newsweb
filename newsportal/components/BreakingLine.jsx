@@ -64,7 +64,7 @@ const BreakingLine = ({ news }) => {
               size={"30px"}
             />
           </span>
-          <h2 className="text-black font-semibold text-lg">Headlines</h2>
+          <h2 className="text-[c333333] font-semibold text-lg">Headlines</h2>
         </div>
       </div>
 
