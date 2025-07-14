@@ -20,7 +20,7 @@ const NewsContent = () => {
   
     const get_news=async()=>{
       try {
-        const {data}=await axios.get("https://newsweb-1-45eo.onrender.com/api/news",{
+        const {data}=await axios.get("https://newsweb-k4pv.onrender.com/api/news",{
           headers:{
             Authorization:`bearer ${store.token}`
           }
@@ -82,7 +82,7 @@ const NewsContent = () => {
         }
       )
 
-      const {data}= await axios.put(`https://newsweb-1-45eo.onrender.com/api/news/status_update/${news_id}`,{status},{
+      const {data}= await axios.put(`https://newsweb-k4pv.onrender.com/api/news/status_update/${news_id}`,{status},{
         headers :{
           Authorization:`Bearer ${store.token}`
         }
