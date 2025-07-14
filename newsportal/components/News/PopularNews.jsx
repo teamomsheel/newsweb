@@ -39,7 +39,7 @@ import SimpleDetailsNewsCard from "./items/SimpleDetailsNewsCard";
 
 const PopularNews =async({ type, news }) => {
 
-   const res= await fetch(`http://localhost:5000/api/popular/news`,{
+   const res= await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/popular/news`,{
     next:{
       revalidate:1,
     }
