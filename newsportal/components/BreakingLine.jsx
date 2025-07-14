@@ -70,14 +70,14 @@ const BreakingLine = ({ news }) => {
 
       {/* Marquee Section */}
       <div className="flex md:w-[calc(100%-170px)] w-full">
-        <div className="flex w-full justify-start items-center overflow-hidden whitespace-nowrap">
+        <div className="flex w-full text-black justify-start items-center overflow-hidden whitespace-nowrap">
           <Marquee gradient={false} pauseOnHover={true} speed={60}>
             {Object.keys(news).length > 0 &&
               Object.keys(news).flatMap((c) =>
                 news[c].map((n, j) => (
                   <Link
                     key={n.id || `${c}-${j}`}
-                    className="py-3 block font-semibold hover:text-amber-500 pr-12 text-sm whitespace-nowrap"
+                    className="py-3 block text-black font-semibold hover:text-amber-500 pr-12 text-sm whitespace-nowrap"
                     href={`/news/${n.slug}`}
                   >
                     {n.title}
