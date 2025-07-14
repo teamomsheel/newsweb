@@ -82,7 +82,7 @@ const CategoryNews = async ({ params }) => {
 
   console.log("Category:", category);
 
-  const res = await fetch(`http://localhost:5000/api/category/news/${encodeURIComponent(category)}`, {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/category/news/${encodeURIComponent(category)}`, {
     cache: "no-store",
   });
 
