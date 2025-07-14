@@ -1,4 +1,4 @@
-import BreadCrumb from '@/components/Breadcrumb'
+import BreadCrumb from '@/components/BreadCrumb'
 
 import SimpleDetailsNewsCard from "@/components/News/items/SimpleDetailsNewsCard";
 import PopularNews from "@/components/News/PopularNews";
