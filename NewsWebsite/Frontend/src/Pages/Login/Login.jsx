@@ -174,7 +174,7 @@ const Login = () => {
     setLoader(true);
     try {
       const res = await axios.post(
-        "https://newsweb-1-45eo.onrender.com/api/login",
+        "https://newsweb-k4pv.onrender.com/api/login",
         {
           email: state.email,
           password: state.password,
@@ -213,7 +213,7 @@ const Login = () => {
   useEffect(() => {
     const checkLoginStatus = async () => {
       try {
-        const res = await axios.get("https://newsweb-1-45eo.onrender.com/api/login", {
+        const res = await axios.get("https://newsweb-k4pv.onrender.com/api/login", {
           withCredentials: true,
         });
         if (res.data.user?.email) {
@@ -229,7 +229,7 @@ const Login = () => {
 
   const handleLogout = async () => {
     try {
-      await axios.post("https://newsweb-1-45eo.onrender.com/api/logout", {}, { withCredentials: true });
+      await axios.post("https://newsweb-k4pv.onrender.com/api/logout", {}, { withCredentials: true });
       toast.success("Logged out successfully");
       setIsLoggedIn(false);
       localStorage.removeItem("newToken");
