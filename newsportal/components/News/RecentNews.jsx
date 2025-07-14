@@ -3,7 +3,7 @@ import NewsCard from "./items/NewsCard";
 import Title from "../Title";
 
 const RecentNews = async () => {
-  const res = await fetch("http://localhost:5000/api/recent/news", {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/recent/news`, {
     next: {
       revalidate: 1,
     },
