@@ -1,4 +1,5 @@
-import BreadCrumb from "@/components/breadCrumb";
+import BreadCrumb from '@/components/Breadcrumb'
+
 import SimpleDetailsNewsCard from "@/components/News/items/SimpleDetailsNewsCard";
 import PopularNews from "@/components/News/PopularNews";
 import Search from "@/components/Search";
