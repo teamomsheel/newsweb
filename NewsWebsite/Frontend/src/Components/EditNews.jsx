@@ -39,7 +39,7 @@ const EditNews = () => {
 
     try {
       setLoader(true);
-      const { data } = await axios.put(`https://newsweb-1-45eo.onrender.com/api/news/update/${news_id}`, formData, {
+      const { data } = await axios.put(`https://newsweb-k4pv.onrender.com/api/news/update/${news_id}`, formData, {
         headers: {
           Authorization: `Bearer ${store.token}`,
         },
@@ -57,7 +57,7 @@ const EditNews = () => {
 
   const get_images = async () => {
     try {
-      const { data } = await axios.get("https://newsweb-1-45eo.onrender.com/api/images", {
+      const { data } = await axios.get("https://newsweb-k4pv.onrender.com/api/images", {
         headers: {
           Authorization: `Bearer ${store.token}`,
         },
@@ -82,7 +82,7 @@ const EditNews = () => {
       }
       setImagesLoader(true);
 
-      const { data } = await axios.post("https://newsweb-1-45eo.onrender.com/api/images/add", formData, {
+      const { data } = await axios.post("https://newsweb-k4pv.onrender.com/api/images/add", formData, {
         headers: {
           Authorization: `Bearer ${store.token}`,
         },
@@ -99,7 +99,7 @@ const EditNews = () => {
 
   const get_news=async()=>{
     try {
-        const {data}=await axios.get(`https://newsweb-1-45eo.onrender.com/api/news/${news_id}`,{
+        const {data}=await axios.get(`https://newsweb-k4pv.onrender.com/api/news/${news_id}`,{
             headers:{
                 Authorization:`Barer ${store.token}`
             }
