@@ -136,7 +136,7 @@ const LatestNews = () => {
       );
       const data = await res.json();
       setNews(data.news);
-      console.log("Latest news:", data);
+      // console.log("Latest news:", data);
     } catch (error) {
       console.error("Error fetching latest news:", error);
     }
