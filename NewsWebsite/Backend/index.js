@@ -18,7 +18,7 @@ app.use(express.json());
 // }));
 
 app.use(cors({
-  origin: ['https://newsweb-qapb.vercel.app', 'https://newsweb.vercel.app'], // add both preview and production URLs
+  origin: ['https://newsweb-qapb.vercel.app', 'https://newsweb.vercel.app','https://www.mystartupnews.in'], // add both preview and production URLs
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
